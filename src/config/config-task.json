@@ -1,0 +1,7 @@
+[
+  {
+    "id": "task-interval",
+    "type": "interval",
+    "intervalSeconds": 3
+  }
+]
