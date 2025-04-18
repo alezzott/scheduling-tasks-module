@@ -10,7 +10,7 @@ import { ScheduleMetadata, ScheduleType } from '../core/value-objects/ScheduleMe
 import { saveReportsToCsv } from '../utils/generate-report-file-csv';
 
 const scheduler = new Scheduler({
-  maxRetries: 5,
+  maxRetries: Number(process.env.TASK_MAX_RETRIES),
   middlewares: [logMiddleware],
 });
 
@@ -37,4 +37,4 @@ setTimeout(() => {
   const fileName = generateReportFileName();
   saveReportsToFile(reports, reportsDir, fileName);
   saveReportsToCsv(reports, reportsDir, fileName);
-}, 10000);
+}, Number(process.env.TASK_TIMEOUT_MS));

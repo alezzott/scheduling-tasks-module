@@ -3,5 +3,10 @@
     "id": "task-interval",
     "type": "interval",
     "intervalSeconds": 3
+  },
+  {
+    "id": "task-fixed",
+    "type": "fixed",
+    "fixedTime": "02:00"
   }
 ]
