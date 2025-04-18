@@ -1,0 +1,24 @@
+[
+  {
+    "taskId": "task-interval",
+    "startTime": "18/04/2025 - 18:04:58",
+    "endTime": "18/04/2025 - 18:04:58",
+    "success": true,
+    "error": "Erro aleatório!",
+    "retries": 3
+  },
+  {
+    "taskId": "task-interval",
+    "startTime": "18/04/2025 - 18:05:01",
+    "endTime": "18/04/2025 - 18:05:01",
+    "success": true,
+    "retries": 0
+  },
+  {
+    "taskId": "task-interval",
+    "startTime": "18/04/2025 - 18:05:04",
+    "endTime": "18/04/2025 - 18:05:04",
+    "success": true,
+    "retries": 0
+  }
+]

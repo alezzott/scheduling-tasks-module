@@ -1,0 +1,4 @@
+taskId,startTime,endTime,success,error,retries
+task-interval,18/04/2025 - 18:04:58,18/04/2025 - 18:04:58,true,"Erro aleatório!",3
+task-interval,18/04/2025 - 18:05:01,18/04/2025 - 18:05:01,true,-,0
+task-interval,18/04/2025 - 18:05:04,18/04/2025 - 18:05:04,true,-,0
