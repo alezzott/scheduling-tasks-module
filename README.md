@@ -6,20 +6,27 @@ Este módulo permite o agendamento, execução e monitoramento de tarefas (“ta
 
 ---
 
+## Tecnologias
+
+- **Node.js**
+- **TypeScript**
+
+---
+
 ## Fluxo de Execução
 
 O diagrama abaixo ilustra o fluxo completo de execução das tasks, desde o carregamento da configuração até a geração dos relatórios, incluindo tratamento de erros, retries e fallback:
 
 ![Fluxo de Execução](./fluxo-de-execucao.png)
 
-
 ### Princípios e Padrões Utilizados
 
 - **Separação de Responsabilidades:**  
-  Cada classe tem uma função clara:  
-  - `Scheduler`: gerencia o agendamento e execução das tasks.  
-  - `Task`: encapsula a lógica de cada unidade de trabalho.  
-  - `Logger`: registra logs detalhados de execução.  
+  Cada classe tem uma função clara:
+
+  - `Scheduler`: gerencia o agendamento e execução das tasks.
+  - `Task`: encapsula a lógica de cada unidade de trabalho.
+  - `Logger`: registra logs detalhados de execução.
   - `Reporter`: armazena e exporta o histórico das execuções.
 
 - **Extensibilidade:**  
@@ -28,10 +35,10 @@ O diagrama abaixo ilustra o fluxo completo de execução das tasks, desde o carr
 - **Tratamento de Erros:**  
   O sistema implementa retries configuráveis, fallback e logging de falhas, garantindo resiliência e rastreabilidade.
 
-- **Padrões de Projeto Aplicados:**  
-  - *Template Method*: Define o esqueleto da execução de uma task, permitindo customização de etapas específicas.
-  - *Strategy*: Permite diferentes estratégias de agendamento (intervalo ou horário fixo).
-  - *Middleware*: Possibilita adicionar lógica extra antes/depois da execução das tasks.
+- **Padrões de Projeto Aplicados:**
+  - _Template Method_: Define o esqueleto da execução de uma task, permitindo customização de etapas específicas.
+  - _Strategy_: Permite diferentes estratégias de agendamento (intervalo ou horário fixo).
+  - _Middleware_: Possibilita adicionar lógica extra antes/depois da execução das tasks.
 
 ---
 
@@ -115,5 +122,3 @@ TASK_MAX_RETRIES=3
 2. Edite o arquivo `.env` e defina os valores desejados.
 
 Essas variáveis controlam o tempo limite e o número de tentativas para execução das tasks.
-
-
