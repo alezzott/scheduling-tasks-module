@@ -90,7 +90,7 @@ Quando chega o momento:
 
 - O Scheduler executa a task.
 - O Logger registra início, fim, sucesso, erro e fallback.
-- Em caso de erro, o sistema realiza retries configuráveis.
+- Em caso de erro, o módulo realiza retries configuráveis.
 - Se persistir a falha, executa o fallback ou marca como falha.
 
 ### 4. Relatórios
@@ -98,7 +98,7 @@ Quando chega o momento:
 O Reporter mantém o histórico de execuções:
 
 - Em memória, para consulta rápida.
-- Exportação para arquivos JSON e CSV, para auditoria e análise.
+- Exportação para arquivos JSON e CSV.
 
 ## 5. Configuração do Ambiente
 
@@ -112,13 +112,5 @@ TASK_TIMEOUT_MS=60000
 # Número máximo de tentativas (retries) em caso de falha na execução da task
 TASK_MAX_RETRIES=3
 ```
-
-**Exemplo de uso:**
-
-1. Copie o arquivo de exemplo:
-   ```sh
-   cp .env.example .env
-   ```
-2. Edite o arquivo `.env` e defina os valores desejados.
 
 Essas variáveis controlam o tempo limite e o número de tentativas para execução das tasks.
