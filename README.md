@@ -2,7 +2,7 @@
 
 ## Visão Geral
 
-Este módulo permite o agendamento, execução e monitoramento de tarefas (“tasks”) de forma flexível e robusta. Ele suporta agendamento periódico ou em horários fixos, logging detalhado, tratamento de erros com retry e fallback, além de geração de relatórios em memória e em arquivos JSON/CSV.
+Este módulo permite o agendamento, execução e monitoramento de tarefas (“tasks”). Ele suporta agendamento periódico ou em horários fixos, logging detalhado, tratamento de erros com retry e fallback, além de geração de relatórios em memória e em arquivos JSON/CSV.
 
 ---
 
